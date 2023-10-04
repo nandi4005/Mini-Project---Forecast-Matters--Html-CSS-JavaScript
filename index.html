@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huMBle</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css and js file link  -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" async></script>
+    
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.jpg" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#rainy">rainy</a>
+        <a href="#cold">cold</a>
+        <a href="#sunny">sunny</a>
+        <a href="#items">items</a>
+    </nav>
+
+    <div class="icons">
+        <button class="fas fa-search" id="search-btn"></button>
+        <button class="fas fa-shopping-cart cart" id="cart-btn" onclick="cart()"><span style="color:green;">0</span></button>
+        <button class="fas fa-user" id="login-btn" onclick="login()"></button>
+        <button class="fas fa-bars" id="men-btn"></button>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Ordering food by Climate Conditions</h3>
+        <p></p>
+        <a href="#" class="btn">get yours now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about us  </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>why food is needed?</h3>
+            <p>A food is something that provides nutrients. Nutrients are substances that provide: energy for activity, growth, and all functions of the body such as breathing, digesting food, and keeping warm; materials for the growth and repair of the body, and for keeping the immune system healthy.</p>
+            <p></p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- rainy section starts  -->
+
+<section class="menu" id="rainy">
+
+    <h1 class="heading">  rainy </h1>
+    
+    
+    <div class="box-container">
+    
+
+        <div class="box" id="item1">
+            <img src="images/samosa.jpg" alt="">
+            <h3>Samosa</h3>
+            <div class="price">₹30 <span>₹50</span></div>
+            <button class="add-cart cart1" >add to cart</button>
+        </div>
+
+        <div class="box" id="item2">
+            <img src="images/pakoda.jpg" alt="">
+            <h3>Pakoda</h3>
+            <div class="price">₹30 <span>₹50</span></div>
+            <button  class="add-cart cart2"  >add to cart</button>
+        </div>
+        
+        <div class="box" id="item3">
+            <img src="images/idly.jpg" alt="">
+            <h3>Idly</h3>
+            <div class="price">₹40 <span>₹60</span></div>
+            <button  class="add-cart cart3" >add to cart</button>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- rainy section ends -->
+<!-- cold section starts -->
+<section class="menu" id="cold">
+
+    <h1 class="heading">  cold </h1>
+    
+    
+    <div class="box-container">
+    
+
+        <div class="box" id="item1">
+            <img src="images/chai.jpg" alt="">
+            <h3>Tea</h3>
+            <div class="price">₹20 <span>₹30</span></div>
+            <button class="add-cart cart1" >add to cart</button>
+        </div>
+
+        <div class="box" id="item2">
+            <img src="images/dosa.jpg" alt="">
+            <h3>Dosa</h3>
+            <div class="price">₹50 <span>₹70</span></div>
+            <button  class="add-cart cart2"  >add to cart</button>
+        </div>
+
+        <div class="box" id="item3">
+            <img src="images/upma.jpg" alt="">
+            <h3>Upma</h3>
+            <div class="price">₹45 <span>₹60</span></div>
+            <button  class="add-cart cart3" >add to cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- cold section ends -->
+<!-- sunny section starts  -->
+
+<section class="menu" id="sunny">
+
+    <h1 class="heading">  sunny </h1>
+
+    <div class="box-container">
+
+        <div class="box" id="item1">
+            <img style="width:47%;" src="images/ice.jpg" alt="">
+            <h3>Ice Cream</h3>
+            <div class="price">₹50 <span>₹70</span></div>
+            <button class="add-cart cart1" >add to cart</button>
+        </div>
+
+        <div class="box" id="item2">
+            <img style="width:62%" src="images/mango.jpg" alt="">
+            <h3>Mango Juice</h3>
+            <div class="price">₹35 <span>₹50</span></div>
+            <button class="add-cart cart2" >add to cart</button>
+        </div>
+        
+        <div class="box" id="item3">
+            <img style="width:30%" src="images/lassi.jpg" alt="">
+            <h3>Lassi</h3>
+            <div class="price">₹30 <span>₹45</span></div>
+            <button class="add-cart cart3" >add to cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- sunny section ends -->
+
+
+
+<!-- items section starts  -->
+
+<section class="menu" id="items">
+
+    <h1 class="heading">  items </h1>
+
+    <div class="box-container">
+
+        <div class="box" id="item1">
+            <img src="images/biryani.jpg" alt="">
+            <h3>Chicken Biryani</h3>
+            <div class="price">₹220 <span>₹250</span></div>
+            <button class="add-cart cart1" >add to cart</button>
+        </div>
+
+        <div class="box" id="item2">
+            <img src="images/friedrice.jpg" alt="">
+            <h3>Veg Fried Rice</h3>
+            <div class="price">₹110 <span>₹130</span></div>
+            <button class="add-cart cart2" >add to cart</button>
+        </div>
+
+        <div class="box" id="item3">
+            <img src="images/gobi.jpg" alt="">
+            <h3>Gobi Manchurian</h3>
+            <div class="price">₹120 <span>₹140</span></div>
+            <button class="add-cart cart3" >add to cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- items section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">rainy</a>
+        <a href="#">cold</a>
+        <a href="#">sunny</a>
+        <a href="#">items</a>
+    </div>
+
+    <div class="credit">created by <span>mr. Nandi MB</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
